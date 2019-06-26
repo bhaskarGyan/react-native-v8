@@ -78,9 +78,18 @@ index 71e62af..e4e5457 100644
        [](const std::string& message, unsigned int logLevel) {
          reactAndroidLoggingHook(message, logLevel);
 diff --git a/ReactAndroid/src/main/jni/react/jni/Android.mk b/ReactAndroid/src/main/jni/react/jni/Android.mk
-index 9259233..b49eb49 100644
+index 9259233..2ac952a 100644
 --- a/ReactAndroid/src/main/jni/react/jni/Android.mk
 +++ b/ReactAndroid/src/main/jni/react/jni/Android.mk
+@@ -22,7 +22,7 @@ LOCAL_CFLAGS += -fexceptions -frtti -Wno-unused-lambda-capture
+ LOCAL_LDLIBS += -landroid
+ 
+ # The dynamic libraries (.so files) that this module depends on.
+-LOCAL_SHARED_LIBRARIES := libfolly_json libfb libjsc libglog_init libyoga
++LOCAL_SHARED_LIBRARIES := libfolly_json libfb libglog_init libyoga
+ 
+ # The static libraries (.a files) that this module depends on.
+ LOCAL_STATIC_LIBRARIES := libreactnative
 @@ -53,7 +53,8 @@ include $(BUILD_SHARED_LIBRARY)
  #   to the specification inside <dir>/<module-dir>/Android.mk.
  $(call import-module,folly)
