@@ -1,5 +1,5 @@
 package-lock.json
-# /build
+/build
 /dist
 
 scripts/depot_tools
@@ -25,7 +25,7 @@ out/
 
 # Gradle files
 .gradle/
-# build/
+build/
 
 # Local configuration file (sdk path, etc)
 local.properties
@@ -405,7 +405,7 @@ Temporary Items
 # Freeline
 
 ### ReactNative.Gradle Stack ###
-# **/build/
+**/build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
