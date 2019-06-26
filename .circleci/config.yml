@@ -21,7 +21,7 @@ jobs:
       - run:
           name: Build React Native V8
           command: |
-            scripts/build.sh
+            npm run build
 
       - run:
           name: Archive
